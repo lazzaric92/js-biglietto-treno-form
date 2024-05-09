@@ -1,5 +1,53 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --header-height: 78px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.my_w-40 {
+    width: 40%;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+ul li i {
+    cursor: pointer;
+}
+
+
+header a,
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: normal;
+}
+
+.nav-brand {
+    width: 3rem;
+    cursor: pointer;
+}
+
+#main-header {
+    height: 300px;
+    margin-top: var(--header-height);
+    background-image: url(../img/scotlands-steam-train.jpg);
+    background-position: top;
+}
+
+button.btn {
+    border-color: #e70000;
+    color: #e70000;
+}
+
+button.btn:hover {
+    background-color: #e70000;
+}
+
+.my_bg-red {
+    background-color: #e70000;
 }
