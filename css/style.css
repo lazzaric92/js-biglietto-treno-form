@@ -6,8 +6,10 @@ body {
     font-family: sans-serif;
 }
 
-.my_w-40 {
-    width: 40%;
+.my_container {
+    min-width: 360px;
+    width: 100%;
+    min-height: 100vh;
 }
 
 ul li a:hover {
@@ -17,7 +19,6 @@ ul li a:hover {
 ul li i {
     cursor: pointer;
 }
-
 
 header a,
 footer a {
@@ -37,6 +38,13 @@ footer a {
     margin-top: var(--header-height);
     background-image: url(../img/scotlands-steam-train.jpg);
     background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.user-form {
+    width: 90%;
+    max-width: 400px;
 }
 
 button.btn {
@@ -50,4 +58,21 @@ button.btn:hover {
 
 .my_bg-red {
     background-color: #e70000;
+}
+
+/* ! sm - almeno 576px di larghezza */
+@media screen and (min-width: 576px) {
+    div.user-form {
+        width: 400px;
+    }
+}
+
+/* ! lg - almeno 1200px di larghezza */
+@media screen and (min-width: 1200px) {
+    #main-header {
+        background-image: url(../img/steam-train-2.jpg);
+        background-position: center;
+        margin-top: 50px;
+        height: 300px;
+    }
 }
